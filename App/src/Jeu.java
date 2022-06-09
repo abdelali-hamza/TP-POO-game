@@ -72,9 +72,6 @@ public class Jeu {
             obj2.printStackTrace();
             return;
         }
-  
-
-        //System.out.println("Deserializing  HashMap..");
         
     }  
     public String set_meilleur_score_global() {

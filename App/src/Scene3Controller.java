@@ -50,12 +50,6 @@ public class Scene3Controller {
     @FXML
     Text find;
 
-    @FXML
-    void chose(ActionEvent event){
-        System.out.println("hello");
-
-     }
-
 
     public void   genererqst( Partie partie){
         File folder = new File("/Users/Abdelali/Desktop/App-Poo-Last/App/src/imagesQuestions");
@@ -73,7 +67,6 @@ public class Scene3Controller {
             int j  =  tab.get(iterateur);
             Image hh=new Image("./imagesQuestions/"+files[j].getName());
             ((ImageView)node).setImage(hh);
-            System.out.println("sheep loaded");
             ((ImageView)node).setId(files[j].getName().replace(".jpg", ""));
             if( iterateur == i){
                 

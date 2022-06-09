@@ -89,7 +89,6 @@ public class Scene4Controller {
             hbox.getChildren().add(hh);
         }
         btnconfirm.setOnAction(e->{
-            System.out.println("entered event");
             String str="";
             for (Node node:hbox.getChildren()) {
                 str+=((TextField)node).getText();
