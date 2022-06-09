@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="990.0" prefWidth="1434.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Scene2Controller">
+   <left>
+      <AnchorPane prefHeight="990.0" prefWidth="318.0" style="-fx-background-color: #0A1E4C;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="roll" layoutX="108.0" layoutY="852.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="96.0" style="-fx-background-radius: 10px;" text="Roll" textFill="#2a3494">
+               <font>
+                  <Font name="Futura Medium" size="30.0" />
+               </font></Button>
+            <ImageView fx:id="dice" fitHeight="196.0" fitWidth="223.0" layoutX="93.0" layoutY="661.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="dice2" fitHeight="196.0" fitWidth="223.0" layoutX="-1.0" layoutY="662.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="dice3" fitHeight="44.0" fitWidth="41.0" layoutX="88.0" layoutY="724.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="88.0" />
+            <ImageView fx:id="dice31" fitHeight="44.0" fitWidth="41.0" layoutX="185.0" layoutY="724.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="185.0" />
+            <VBox alignment="CENTER_LEFT" layoutX="16.0" layoutY="185.0" prefHeight="267.0" prefWidth="273.0" style="-fx-border-color: white; -fx-border-radius: 20px; -fx-border-width: 4px;" AnchorPane.leftAnchor="16.0">
+               <children>
+                  <Label fx:id="info1" text="First" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="info2" text="second" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="info3" text="Third" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="info4" text="Third" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="info5" text="Third" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <ImageView fitHeight="145.0" fitWidth="153.0" layoutX="105.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/userInfo.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="board" prefHeight="990.0" prefWidth="1114.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="winorlose" fill="WHITE" layoutX="169.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Lao MN" size="29.0" />
+               </font>
+            </Text>
+            <GridPane fx:id="grid" hgap="10.0" layoutX="251.0" layoutY="104.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="902.0" prefWidth="602.0" rotate="90.0" style="-fx-effect: 1;" vgap="10.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="90.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="3" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="2" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="16" />
+                  <Button layoutX="94.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 25 25 0;" text="1" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="16" />
+                  <Button layoutX="682.0" layoutY="701.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="14" textFill="TRANSPARENT" GridPane.rowIndex="13" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="16" textFill="TRANSPARENT" GridPane.rowIndex="11" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="15" textFill="TRANSPARENT" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="13" textFill="TRANSPARENT" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="12" textFill="TRANSPARENT" GridPane.rowIndex="15" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0 0 25;" text="11" textFill="TRANSPARENT" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="10" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="9" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="8" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="7" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="6" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="5" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="4" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="16" />
+                  <Button layoutX="10.0" layoutY="502.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="23" textFill="TRANSPARENT" GridPane.rowIndex="4" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="21" textFill="TRANSPARENT" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="20" textFill="TRANSPARENT" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="19" textFill="TRANSPARENT" GridPane.rowIndex="8" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="18" textFill="TRANSPARENT" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="42" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="41" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="40" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="39" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="38" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="25" textFill="TRANSPARENT" GridPane.rowIndex="2" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="22" textFill="TRANSPARENT" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="24" textFill="TRANSPARENT" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="37" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 25 0 0;" text="36" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="35" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="34" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="33" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="32" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="31" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="30" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="29" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="28" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="27" textFill="TRANSPARENT" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button layoutX="859.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="44" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="43" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 25 0 0 0;" text="26" textFill="TRANSPARENT" GridPane.rowIndex="1" />
+                  <Button layoutX="859.0" layoutY="491.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="56" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="55" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="54" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="53" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="52" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="51" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="50" textFill="TRANSPARENT" GridPane.columnIndex="9" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0 25 0;" text="49" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="48" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="13" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="47" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="46" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="11" />
+                  <Button layoutX="223.0" layoutY="639.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="69" textFill="TRANSPARENT" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 25 0 0 0;" text="68" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="67" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="66" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="65" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="64" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="63" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="62" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="60" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="59" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="58" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0 0 25;" text="57" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="78" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="77" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="76" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="75" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 25 0 0;" text="74" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="73" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="72" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="71" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="70" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button layoutX="721.0" layoutY="343.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="90" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="88" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0 0 25;" text="87" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="86" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="85" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="84" textFill="TRANSPARENT" GridPane.columnIndex="7" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0  25 0;" text="83" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="12" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="82" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="11" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="80" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="79" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="91" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <Button layoutX="294.0" layoutY="417.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="93" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="92" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 25 0 0 0;" text="94" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="98" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="97" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 25 0 0;" text="96" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="95" textFill="TRANSPARENT" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 0 0 25 25;" text="100" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="99" textFill="TRANSPARENT" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="45" textFill="TRANSPARENT" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="81" textFill="TRANSPARENT" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="89" textFill="TRANSPARENT" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="61" textFill="TRANSPARENT" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <Button layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="17" textFill="TRANSPARENT" GridPane.rowIndex="10" />
+               </children>
+            </GridPane>
+            <Button fx:id="save" layoutX="655.0" layoutY="44.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="283.0" style="-fx-background-color: #0A1E4C #0A1E4C; -fx-background-radius: 10px;" text="Log out  &amp; Save" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="restart" layoutX="30.0" layoutY="51.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="140.0" style="-fx-background-color: #0A1E4C #0A1E4C; -fx-background-radius: 10px;" text="Restart" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="New" layoutX="34.0" layoutY="118.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="107.0" style="-fx-background-color: #0A1E4C #0A1E4C; -fx-background-radius: 10px;" text="New" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="restart1" layoutX="959.0" layoutY="40.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="140.0" style="-fx-background-color: #0A1E4C #0A1E4C; -fx-background-radius: 10px;" text="Quit" textFill="WHITE">
+               <font>
+                  <Font name="Futura Medium" size="29.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

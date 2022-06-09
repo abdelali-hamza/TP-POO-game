@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/Abdelali/Downloads/javafx-sdk-18.0.1/lib/**/*.jar"
+    ]
+}
