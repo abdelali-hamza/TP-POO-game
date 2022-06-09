@@ -159,12 +159,7 @@ public class Scene2Controller {
         }
 
 	}
-    public void hamza(){
-        System.out.println("hola");;
-    }
-    public void action(ActionEvent e){
-        System.out.println("test worked");
-    }
+
     public void LoadPlateau(Joueur user){
         for ( Node node:grid.getChildren()) {
             
@@ -254,12 +249,12 @@ public class Scene2Controller {
                         if (joueur.PartieDuJoeur.getScore() > joueur.getScore()) {
                             joueur.setScore(joueur.PartieDuJoeur.getScore());
                             board.setStyle("-fx-background-color: rgb(102,255,153,0.5)");
-                            if(joueur.PartieDuJoeur.getScore()>Jeu.meilleur_score_global)winorlose.setText("Congratulations buddy ! you beated the game high score");
-                            else winorlose.setText("Congratulations buddy ! you beated your personal high score");
+                            if(joueur.PartieDuJoeur.getScore()>Jeu.meilleur_score_global)winorlose.setText("Congratulations ! you beated the game high score");
+                            else winorlose.setText("Congratulations  ! you beated your personal high score");
                         }
                         else if (joueur.PartieDuJoeur.getScore()>Jeu.meilleur_score_global){
                             board.setStyle("-fx-background-color: rgb(102,255,153,0.5)");
-                            winorlose.setText("Congratulations buddy ! you beated the game high score");
+                            winorlose.setText("Congratulations  ! you beated the game high score");
                         }
                         else {
                             board.setStyle("-fx-background-color: rgb(255,0,0,0.4)");
@@ -278,7 +273,7 @@ public class Scene2Controller {
                     alert.showAndWait();
                 }
                 Button btnNext = recherche(grid,joueur.PartieDuJoeur.getPosition());
-                btnNext.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, BorderWidths.DEFAULT)));
+                btnNext.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.SOLID, CornerRadii.EMPTY, BorderWidths.FULL)));
             });
         }
     }

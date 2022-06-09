@@ -1,8 +1,4 @@
 public class CaseParcours extends Case {
-
-    
-
-
     public CaseParcours() {
         super("Grey");
     }

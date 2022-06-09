@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.swing.text.html.HTMLDocument.BlockElement;
+
 
 public class Partie implements Serializable {
 

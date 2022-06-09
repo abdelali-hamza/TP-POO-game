@@ -27,7 +27,7 @@ public class CaseImage extends CaseQuestion {
             secondStage.setScene(new Scene(root,638,444));
             secondStage.initModality(Modality.APPLICATION_MODAL );
             secondStage.show();
-            scene3Controller.genqst(user.PartieDuJoeur);
+            scene3Controller.genererqst(user.PartieDuJoeur);
         } catch (IOException e) {
             e.printStackTrace();
         }

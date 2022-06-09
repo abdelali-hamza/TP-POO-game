@@ -59,7 +59,7 @@ public class Scene4Controller {
     @FXML 
     Text find;
 
-    public void   genqst( Partie partie){
+    public void   genererqst( Partie partie){
         ArrayList<QuestionDefinition> tab= new ArrayList<>();
         tab.add(new QuestionDefinition("A building for human habitation", "house"));
         tab.add(new QuestionDefinition("A place where we cook ", "kitchen"));

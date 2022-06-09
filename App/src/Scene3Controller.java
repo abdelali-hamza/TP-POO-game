@@ -57,7 +57,7 @@ public class Scene3Controller {
      }
 
 
-    public void   genqst( Partie partie){
+    public void   genererqst( Partie partie){
         File folder = new File("/Users/Abdelali/Desktop/App-Poo-Last/App/src/imagesQuestions");
         File files[] = folder.listFiles(); 
         System.out.println("files length" +files.length);
@@ -81,14 +81,14 @@ public class Scene3Controller {
                 answer.setText(files[j].getName().replace(".jpg", ""));
             }
             ((ImageView)node).setOnMouseClicked(event ->{
-                if( answer.getText().equals(  ((ImageView)node).getId())){
+                if( answer.getText().equals(((ImageView)node).getId())){
                     System.out.println("good answer");
                     anch.setStyle("-fx-background-color: rgb(102,255,153,0.5)");
                     goodorbad.setText("Good answer !  congrats buddy");
                     answer.setText("");
                     gridImages.setVisible(false);
                     find.setText("");
-                    PauseTransition pt = new PauseTransition(Duration.seconds(2));
+                    PauseTransition pt = new PauseTransition(Duration.seconds(1));
                     pt.setOnFinished(ee -> {
                         Stage stage = (Stage)gridImages.getScene().getWindow();
                         stage.close();

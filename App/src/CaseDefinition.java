@@ -25,7 +25,7 @@ public class CaseDefinition extends CaseQuestion {
             secondStage.setScene(new Scene(root,622,551));
             secondStage.initModality(Modality.APPLICATION_MODAL );
             secondStage.show();
-            scene4Controller.genqst(user.PartieDuJoeur);
+            scene4Controller.genererqst(user.PartieDuJoeur);
         } catch (IOException e) {
             e.printStackTrace();
         }
